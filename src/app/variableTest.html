@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <script src="variableTest.js"></script>
+    <title>Variable Test</title>
+</head>
+<body>
+<p id="variable">
+  <script>
+    document.getElementById("variable").innerHTML=s1;
+  </script>
+</p>
+<p id="value">
+  <script>
+    document.getElementById("value").innerHTML=variableTest(22);
+    </script>
+</p>
+<p id="changeValue">
+  <script>
+    s1=s1+10;
+    document.getElementById("changeValue").innerHTML=s1;
+  </script>
+</p>
+<p id="newValue">
+  <script>
+    document.getElementById("newValue").innerHTML=variableTest(22);
+  </script>
+</p>
+</body>
+</html>
