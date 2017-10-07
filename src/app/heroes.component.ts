@@ -5,11 +5,11 @@ import {HeroService} from './hero.service';
 
 @Component({
   selector: 'my-heroes',
-  templateUrl:'./app.component.html',
+  templateUrl:'./heroes.component.html',
   styleUrls:['./app.component.css']
 })
 export class HeroesComponent implements OnInit{
-  title = 'Tour of Heroes';
+  filterName='';
   heroes:Hero[];
   selectedHero: Hero;
 
@@ -25,5 +25,6 @@ export class HeroesComponent implements OnInit{
 
   onSelect(hero: Hero): void {
     this.selectedHero = hero;
+    //window.document.getElementById("heroDetail").focus();
   }
 }
